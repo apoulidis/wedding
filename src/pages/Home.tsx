@@ -1,7 +1,7 @@
 import './Home.css';
 
-const BRIDE = 'Ευμορφια';
-const GROOM = 'Αναστασιος';
+const BRIDE = 'Ευμορφία';
+const GROOM = 'Αναστάσιος';
 const TIME = '18:00';
 const CEREMONY_VENUE = 'Ι. Ναος Αγ. Βαρβαρας';
 const CEREMONY_ADDRESS = 'Ανω Πατησια, Αθηνα';
@@ -61,11 +61,10 @@ export default function Home() {
 
       {/* Details */}
       <section className="details" id="details">
-        <h2 className="section-title">Η Μερα μας</h2>
         <div className="details-grid">
           <div className="detail-card">
             <div className="detail-icon">⛪</div>
-            <h3>Τελετη</h3>
+            <h3>Τελετή</h3>
             <p className="detail-venue">{CEREMONY_VENUE}</p>
             <a
               className="detail-address detail-link"
@@ -73,18 +72,18 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {CEREMONY_ADDRESS}
+              📍 {CEREMONY_ADDRESS}
             </a>
           </div>
-          <div className="detail-card detail-card--time">
+          <div className="detail-card">
             <div className="detail-icon">🕕</div>
-            <h3>Ωρα Τελετης</h3>
+            <h3>Ώρα Τελετής</h3>
             <p className="detail-time-big">{TIME}</p>
-            <p className="detail-address">Κυριακη, 28 Ιουνιου 2026</p>
+            <p className="detail-address">Κυριακή, 28 Ιουνίου 2026</p>
           </div>
           <div className="detail-card">
             <div className="detail-icon">🥂</div>
-            <h3>Δεξιωση</h3>
+            <h3>Δεξίωση</h3>
             <p className="detail-venue">{RECEPTION_VENUE}</p>
             <a
               className="detail-address detail-link"
@@ -92,14 +91,14 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {RECEPTION_ADDRESS}
+              📍 {RECEPTION_ADDRESS}
             </a>
           </div>
         </div>
         <p className="details-rsvp-note">
-          Παρακαλουμε απαντηστε εως <strong>{RSVP_DEADLINE}</strong> η στα τηλεφωνα μας
+          Παρακαλούμε απαντήστε μας έως <strong>{RSVP_DEADLINE}</strong> μέσω του παρακάτω RSVP ή στα τηλέφωνά μας
         </p>
-        <a className="btn" href="#rsvp">Απαντηση RSVP</a>
+        <a className="btn" href="#rsvp">Απάντηση RSVP</a>
       </section>
     </>
   );
