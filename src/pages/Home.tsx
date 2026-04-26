@@ -1,7 +1,7 @@
 import './Home.css';
 
-const BRIDE = 'Ευμορφία';
-const GROOM = 'Αναστάσιος';
+const BRIDE = 'Ευμορφια';
+const GROOM = 'Αναστασιος';
 const TIME = '18:00';
 const CEREMONY_VENUE = 'Ι. Ναος Αγ. Βαρβαρας';
 const CEREMONY_ADDRESS = 'Ανω Πατησια, Αθηνα';
@@ -77,7 +77,6 @@ export default function Home() {
           <div className="detail-card">
             <div className="detail-icon">🕕</div>
             <p className="detail-script">{TIME}</p>
-            <p className="detail-script detail-script--date">Κυριακή, 28 Ιουνίου 2026</p>
           </div>
           <div className="detail-card">
             <div className="detail-icon">🥂</div>
