@@ -124,7 +124,7 @@ export default function RSVP() {
         {form.attending === true && (
           <>
             <div className="form-group">
-              <label>Αριθμός ατόμων (συμπεριλαμβανομένου/ης εσάς)</label>
+              <label>Αριθμος ατομων (συμπεριλαμβανομενου/ης εσας)</label>
               <div className="counter">
                 <button type="button" onClick={() => set('guestCount', Math.max(1, form.guestCount - 1))}>−</button>
                 <span>{form.guestCount}</span>
