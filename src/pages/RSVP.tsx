@@ -85,7 +85,7 @@ export default function RSVP() {
   return (
     <section className="rsvp-section" id="rsvp">
       <h2 className="section-title">Απάντηση</h2>
-      <p className="section-sub">Παρακαλούμε ενημερώστε μας για την παρουσία σας ή όχι έως 31 Μαΐου μέσω της παρακάτω φόρμας ή στα τηλέφωνά μας.</p>
+      <p className="section-sub">Παρακαλούμε ενημερώστε μας για την παρουσία σας ή την απουσία σας μέχρι 31 Μαΐου μέσω της παρακάτω φόρμας ή στα τηλέφωνά μας.</p>
 
       <form className="rsvp-card" onSubmit={handleSubmit} noValidate>
         {error && <p className="rsvp-error">{error}</p>}

@@ -4,10 +4,10 @@ const BRIDE = 'Ευμορφία';
 const GROOM = 'Αναστάσιος';
 const TIME = '18:00';
 const CEREMONY_VENUE = 'Ι. Ναός Αγ. Βαρβάρας';
-const CEREMONY_ADDRESS = 'Ανω Πατησια, Αθηνα';
-const CEREMONY_MAPS = 'https://maps.google.com/?q=Ιερος+Ναος+Αγιας+Βαρβαρας+Ανω+Πατησια+Αθηνα';
+const CEREMONY_ADDRESS = 'Αγίας Λαύρας 224, Ανω Πατησια, Αθηνα';
+const CEREMONY_MAPS = 'https://maps.app.goo.gl/yqksxTXvSrfhuBC39';
 const RECEPTION_VENUE = 'Le Soiree de Votanique';
-const RECEPTION_ADDRESS = 'Καστοριας 37, Αθηνα';
+const RECEPTION_ADDRESS = 'Καστοριάς 37, Αθηνα';
 const RECEPTION_MAPS = 'https://maps.google.com/?q=Le+Soiree+de+Votanique+Καστοριας+37+Αθηνα';
 
 const CAL_DAYS = ['Δ','Τ','Τ','Π','Π','Σ','Κ'];
@@ -62,18 +62,6 @@ export default function Home() {
       <section className="details" id="details">
         <div className="details-grid">
           <div className="detail-card">
-            <div className="detail-icon">⛪</div>
-            <p className="detail-script detail-script--greek">{CEREMONY_VENUE}</p>
-            <a
-              className="detail-address detail-link"
-              href={CEREMONY_MAPS}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              📍 {CEREMONY_ADDRESS}
-            </a>
-          </div>
-          <div className="detail-card">
             <div className="detail-icon">
               <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="18" cy="18" r="15" stroke="#9a8070" strokeWidth="1.5"/>
@@ -92,6 +80,18 @@ export default function Home() {
             </div>
             <p className="detail-script">Κυριακή, 28 Ιουνίου 2026</p>
             <p className="detail-script">{TIME}</p>
+          </div>            
+          <div className="detail-card">
+            <div className="detail-icon">⛪</div>
+            <p className="detail-script detail-script--greek">{CEREMONY_VENUE}</p>
+            <a
+              className="detail-address detail-link"
+              href={CEREMONY_MAPS}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              📍 {CEREMONY_ADDRESS}
+            </a>
           </div>
           <div className="detail-card">
             <div className="detail-icon">🥂</div>
