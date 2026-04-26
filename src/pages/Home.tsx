@@ -9,7 +9,6 @@ const CEREMONY_MAPS = 'https://maps.google.com/?q=Ιερος+Ναος+Αγιας
 const RECEPTION_VENUE = 'Le Soiree de Votanique';
 const RECEPTION_ADDRESS = 'Καστοριας 37, Αθηνα';
 const RECEPTION_MAPS = 'https://maps.google.com/?q=Le+Soiree+de+Votanique+Καστοριας+37+Αθηνα';
-const RSVP_DEADLINE = '31 Μαιου 2026';
 
 const CAL_DAYS = ['Δ','Τ','Τ','Π','Π','Σ','Κ'];
 const CAL_WEEKS = [
