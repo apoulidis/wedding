@@ -1,0 +1,52 @@
+/* Global shared styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  background: #ffffff;
+  color: #2c1810;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+.section-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: #2c1810;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.section-sub {
+  color: #7a5c4e;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.85rem 2.5rem;
+  background: transparent;
+  color: #2c1810;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #2c1810;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.25s, color 0.25s;
+}
+
+.btn:hover {
+  background: #2c1810;
+  color: #ffffff;
+}

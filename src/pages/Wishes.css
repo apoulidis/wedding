@@ -1,0 +1,88 @@
+.wishes-section {
+  background: #ffffff;
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.wish-form {
+  background: #faf8f5;
+  border: 1px solid #e8e0d8;
+  border-radius: 0;
+  padding: 2.5rem 2rem;
+  max-width: 540px;
+  margin: 2rem auto 3rem;
+  text-align: left;
+}
+
+.wish-error {
+  background: #fdecea;
+  color: #b00020;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.wish-success {
+  background: #eaf6ea;
+  color: #2e7d32;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.wish-book {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.wish-book-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.4rem;
+  color: #2c1810;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+.wish-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.wish-card {
+  background: #faf8f5;
+  border: 1px solid #e8e0d8;
+  border-radius: 0;
+  padding: 2rem 1.5rem 1.5rem;
+  position: relative;
+}
+
+.wish-card::before {
+  content: '“';
+  position: absolute;
+  top: -0.6rem;
+  left: 1rem;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 4rem;
+  color: #ddd4ca;
+  line-height: 1;
+}
+
+.wish-message {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #2c1810;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.wish-author {
+  font-size: 0.8rem;
+  color: #9a8070;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: right;
+}

@@ -1,0 +1,21 @@
+.footer {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  background: #ffffff;
+  border-top: 1px solid #e8e0d8;
+  color: #9a8070;
+}
+
+.footer-heart {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: #c8b9ad;
+}
+
+.footer-text {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #b0a090;
+}

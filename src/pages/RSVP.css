@@ -1,0 +1,146 @@
+.rsvp-section {
+  background: #faf8f5;
+  padding: 5rem 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid #e8e0d8;
+}
+
+.rsvp-card {
+  background: #fff;
+  border: 1px solid #e8e0d8;
+  border-radius: 0;
+  padding: 2.5rem 2rem;
+  max-width: 540px;
+  margin: 2rem auto 0;
+  text-align: left;
+}
+
+.rsvp-confirm {
+  text-align: center;
+}
+
+.confirm-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.rsvp-confirm h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #2c1810;
+  margin-bottom: 0.75rem;
+  font-weight: 400;
+}
+
+.rsvp-confirm p {
+  color: #6b4c3e;
+  margin-bottom: 1.5rem;
+}
+
+.rsvp-error {
+  background: #fdecea;
+  color: #b00020;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.form-group {
+  margin-bottom: 1.4rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9a8070;
+  margin-bottom: 0.45rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #ddd6ce;
+  border-radius: 0;
+  padding: 0.65rem 0.85rem;
+  font-size: 1rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: #2c1810;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2c1810;
+}
+
+.attend-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.attend-btn {
+  flex: 1;
+  min-width: 180px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd6ce;
+  border-radius: 0;
+  background: #ffffff;
+  color: #2c1810;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.04em;
+}
+
+.attend-btn:hover {
+  border-color: #2c1810;
+}
+
+.attend-btn.active {
+  border-color: #2c1810;
+  background: #2c1810;
+  color: #fff;
+}
+
+.attend-btn.active.decline {
+  background: #7a5c4e;
+  border-color: #7a5c4e;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.counter button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ddd6ce;
+  border-radius: 0;
+  background: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #2c1810;
+  transition: background 0.2s;
+}
+
+.counter button:hover {
+  background: #2c1810;
+  color: #fff;
+  border-color: #2c1810;
+}
+
+.counter span {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  color: #2c1810;
+  min-width: 2rem;
+  text-align: center;
+}
