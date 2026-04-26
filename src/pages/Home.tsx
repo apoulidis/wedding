@@ -76,13 +76,19 @@ export default function Home() {
           </div>
           <div className="detail-card">
             <div className="detail-icon">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16" cy="16" r="13.5" stroke="#9a8070" strokeWidth="1.5"/>
-                {/* Hour hand pointing at 6 (18:00) */}
-                <line x1="16" y1="16" x2="16" y2="24" stroke="#2c1810" strokeWidth="1.8" strokeLinecap="round"/>
-                {/* Minute hand pointing at 12 */}
-                <line x1="16" y1="16" x2="16" y2="8" stroke="#2c1810" strokeWidth="1.2" strokeLinecap="round"/>
-                <circle cx="16" cy="16" r="1.5" fill="#2c1810"/>
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="18" r="15" stroke="#9a8070" strokeWidth="1.5"/>
+                <circle cx="18" cy="18" r="14" stroke="#e8e0d8" strokeWidth="0.5"/>
+                {/* tick marks */}
+                <line x1="18" y1="4" x2="18" y2="6.5" stroke="#c8b9ad" strokeWidth="1.2" strokeLinecap="round"/>
+                <line x1="18" y1="29.5" x2="18" y2="32" stroke="#c8b9ad" strokeWidth="1.2" strokeLinecap="round"/>
+                <line x1="4" y1="18" x2="6.5" y2="18" stroke="#c8b9ad" strokeWidth="1.2" strokeLinecap="round"/>
+                <line x1="29.5" y1="18" x2="32" y2="18" stroke="#c8b9ad" strokeWidth="1.2" strokeLinecap="round"/>
+                {/* Hour hand → 6 o'clock (pointing down) */}
+                <line x1="18" y1="18" x2="18" y2="27" stroke="#2c1810" strokeWidth="2" strokeLinecap="round"/>
+                {/* Minute hand → 12 o'clock (pointing up) */}
+                <line x1="18" y1="18" x2="18" y2="9" stroke="#2c1810" strokeWidth="1.3" strokeLinecap="round"/>
+                <circle cx="18" cy="18" r="1.8" fill="#2c1810"/>
               </svg>
             </div>
             <p className="detail-script">{TIME}</p>
