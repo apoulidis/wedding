@@ -84,8 +84,8 @@ export default function RSVP() {
 
   return (
     <section className="rsvp-section" id="rsvp">
-      <h2 className="section-title">RSVP</h2>
-      <p className="section-sub">Παρακαλούμε απαντήστε μας έως 31 Μαΐου μέσω του παρακάτω RSVP ή στα τηλέφωνά μας</p>
+      <h2 className="section-title">Απάντηση</h2>
+      <p className="section-sub">Παρακαλούμε ενημερώστε μας για την παρουσία σας ή όχι έως 31 Μαΐου μέσω της παρακάτω φόρμας ή στα τηλέφωνά μας.</p>
 
       <form className="rsvp-card" onSubmit={handleSubmit} noValidate>
         {error && <p className="rsvp-error">{error}</p>}
@@ -102,7 +102,7 @@ export default function RSVP() {
         </div>
 
         <div className="form-group">
-          <label>Θα παρευρεθείτε; *</label>
+          <label>Θα παρευρεθειτε; *</label>
           <div className="attend-buttons">
             <button
               type="button"
@@ -135,7 +135,7 @@ export default function RSVP() {
         )}
 
         <button className="btn" type="submit" disabled={sending}>
-          {sending ? 'Αποστολή…' : 'Αποστολη RSVP'}
+          {sending ? 'Αποστολή…' : 'Αποστολη'}
         </button>
       </form>
     </section>

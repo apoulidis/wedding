@@ -28,12 +28,12 @@ export default function Home() {
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1 className="hero-names">
-            {BRIDE} <span className="hero-amp">&amp;</span> {GROOM}
+            {GROOM} <span className="hero-amp">&amp;</span> {BRIDE}
           </h1>
           <div className="hero-calendar">
             <div className="hero-cal-month">
               <span className="cal-line" />
-              <span>ΙΟΥΝΙΟΣ 2026</span>
+              <span>ΙΟΥΝΙΟΣ</span>
               <span className="cal-line" />
             </div>
             <div className="hero-cal-grid">
@@ -91,6 +91,7 @@ export default function Home() {
                 <circle cx="18" cy="18" r="1.8" fill="#2c1810"/>
               </svg>
             </div>
+            <p className="detail-script">Κυριακή, 28 Ιουνίου 2026</p>
             <p className="detail-script">{TIME}</p>
           </div>
           <div className="detail-card">
@@ -106,10 +107,6 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <p className="details-rsvp-note">
-          Παρακαλούμε απαντήστε μας έως <strong>{RSVP_DEADLINE}</strong> μέσω του παρακάτω RSVP ή στα τηλέφωνά μας
-        </p>
-        <a className="btn" href="#rsvp">Απαντηση RSVP</a>
       </section>
     </>
   );

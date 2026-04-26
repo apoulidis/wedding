@@ -4,7 +4,7 @@ import './Header.css';
 const links = [
   { label: 'Αρχικη', href: '#home' },
   { label: 'Η Μερα μας', href: '#details' },
-  { label: 'RSVP', href: '#rsvp' },
+  { label: 'ΑΠΑΝΤΗΣΗ', href: '#rsvp' },
   { label: 'Ευχες', href: '#wishes' },
 ];
 
