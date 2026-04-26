@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -32,9 +32,10 @@ jobs:
         run: npm ci
 
       - name: Build
-        # ✏️  Replace /wedding/ below with your actual repo name (include slashes)
-        # e.g. VITE_BASE_PATH=/my-repo/  or  VITE_BASE_PATH=/ for a custom domain
         run: VITE_BASE_PATH=/wedding/ npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
