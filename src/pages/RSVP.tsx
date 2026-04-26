@@ -7,7 +7,6 @@ const FORMSPREE_ID = 'xzdywyja';
 
 interface FormState {
   name: string;
-  email: string;
   attending: boolean | null;
   guestCount: number;
   dietaryNotes: string;
@@ -15,7 +14,6 @@ interface FormState {
 
 const initial: FormState = {
   name: '',
-  email: '',
   attending: null,
   guestCount: 1,
   dietaryNotes: '',
@@ -41,7 +39,6 @@ export default function RSVP() {
     // Save locally as backup
     addRSVP({
       name: form.name.trim(),
-      email: form.email.trim(),
       attending: form.attending,
       guestCount: form.attending ? form.guestCount : 0,
       dietaryNotes: form.dietaryNotes.trim(),
@@ -54,7 +51,6 @@ export default function RSVP() {
         headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name: form.name.trim(),
-          email: form.email.trim(),
           attending: form.attending ? 'Yes 🥂' : 'No 😔',
           guests: form.attending ? form.guestCount : 0,
           dietary: form.dietaryNotes.trim() || '—',
@@ -89,7 +85,7 @@ export default function RSVP() {
   return (
     <section className="rsvp-section" id="rsvp">
       <h2 className="section-title">RSVP</h2>
-      <p className="section-sub">Παρακαλουμε απαντηστε εως 31 Μαιου 2026</p>
+      <p className="section-sub">Παρακαλουμε απαντηστε εως 31 Μαιου 2026 η στα τηλεφωνα μας</p>
 
       <form className="rsvp-card" onSubmit={handleSubmit} noValidate>
         {error && <p className="rsvp-error">{error}</p>}
@@ -102,16 +98,6 @@ export default function RSVP() {
             onChange={e => set('name', e.target.value)}
             placeholder="Το ονομα σας"
             required
-          />
-        </div>
-
-        <div className="form-group">
-          <label>Email (πραιρετικα)</label>
-          <input
-            type="email"
-            value={form.email}
-            onChange={e => set('email', e.target.value)}
-            placeholder="your@email.com"
           />
         </div>
 

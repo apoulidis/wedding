@@ -3,7 +3,7 @@ export interface RSVPEntry {
   name: string;
   attending: boolean;
   guestCount: number;
-  email: string;
+  email?: string;
   dietaryNotes: string;
   submittedAt: string;
 }

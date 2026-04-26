@@ -42,42 +42,83 @@
   font-weight: 400;
   line-height: 1.15;
   color: #2c1810;
-  margin: 0 0 1.2rem;
+  margin: 0 0 2rem;
 }
 
 .hero-amp {
   font-style: normal;
 }
 
-.hero-invite {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 1.1rem;
-  letter-spacing: 0.1em;
-  color: #6b4c3e;
-  margin-bottom: 2rem;
+/* Calendar */
+.hero-calendar {
+  max-width: 320px;
+  margin: 0 auto;
 }
 
-.hero-divider {
-  width: 60px;
+.hero-cal-month {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.3em;
+  color: #2c1810;
+  margin-bottom: 1.2rem;
+}
+
+.cal-line {
+  flex: 1;
   height: 1px;
   background: #c8b9ad;
-  margin: 0 auto 2rem;
 }
 
-.hero-date {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 1.3rem;
-  letter-spacing: 0.12em;
-  color: #2c1810;
-  margin-bottom: 0.3rem;
-  text-transform: uppercase;
+.hero-cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.2rem 0;
+  text-align: center;
 }
 
-.hero-time {
+.cal-header {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 1.05rem;
-  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+  font-weight: 600;
   color: #9a8070;
+  padding: 0.3rem 0;
+  letter-spacing: 0.05em;
+}
+
+.cal-day {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1rem;
+  color: #2c1810;
+  padding: 0.4rem 0;
+  line-height: 1.2;
+}
+
+.cal-empty {
+  visibility: hidden;
+}
+
+.cal-highlight {
+  background: #e8e0d8;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0 auto;
+  font-weight: 600;
+  padding: 0;
+}
+
+.cal-heart {
+  font-size: 0.6rem;
+  color: #9a8070;
+  line-height: 1;
 }
 
 /* Details Section */
@@ -145,4 +186,39 @@
   font-size: 1rem;
   margin-bottom: 1.5rem;
   letter-spacing: 0.04em;
+}
+
+.detail-card--time {
+  background: #2c1810;
+  border-color: #2c1810;
+}
+
+.detail-card--time h3,
+.detail-card--time .detail-address {
+  color: #e8e0d8;
+}
+
+.detail-card--time .detail-icon {
+  color: #c8b9ad;
+}
+
+.detail-time-big {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #faf8f5;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.detail-link {
+  display: inline-block;
+  color: #9a8070;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.detail-link:hover {
+  color: #2c1810;
+  border-bottom-color: #9a8070;
 }
