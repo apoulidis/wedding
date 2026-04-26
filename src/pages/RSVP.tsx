@@ -96,27 +96,27 @@ export default function RSVP() {
             type="text"
             value={form.name}
             onChange={e => set('name', e.target.value)}
-            placeholder="Το ονομα σας"
+            placeholder="Το ονομά σας"
             required
           />
         </div>
 
         <div className="form-group">
-          <label>Θα παρευρεθειτε; *</label>
+          <label>Θα παρευρεθείτε; *</label>
           <div className="attend-buttons">
             <button
               type="button"
               className={`attend-btn${form.attending === true ? ' active' : ''}`}
               onClick={() => set('attending', true)}
             >
-              🥂 Ναι, θα ειμαι εκει!
+              🥂 Ναί, θα είμαι εκεί!
             </button>
             <button
               type="button"
               className={`attend-btn${form.attending === false ? ' active decline' : ''}`}
               onClick={() => set('attending', false)}
             >
-              😔 Δυστυχως δεν μπορω
+              😔 Δυστυχώς δεν μπορώ
             </button>
           </div>
         </div>
@@ -124,28 +124,18 @@ export default function RSVP() {
         {form.attending === true && (
           <>
             <div className="form-group">
-              <label>Αριθμος ατομων (συμπεριλαμβανομενου/ης εσας)</label>
+              <label>Αριθμός ατόμων (συμπεριλαμβανομένου/ης εσάς)</label>
               <div className="counter">
                 <button type="button" onClick={() => set('guestCount', Math.max(1, form.guestCount - 1))}>−</button>
                 <span>{form.guestCount}</span>
                 <button type="button" onClick={() => set('guestCount', Math.min(10, form.guestCount + 1))}>+</button>
               </div>
             </div>
-
-            <div className="form-group">
-              <label>Διατροφικες αναγκες / σημειωσεις</label>
-              <textarea
-                value={form.dietaryNotes}
-                onChange={e => set('dietaryNotes', e.target.value)}
-                placeholder="Βεγεταριανισμος, αλλεργιες, κ.τ.λ."
-                rows={3}
-              />
-            </div>
           </>
         )}
 
         <button className="btn" type="submit" disabled={sending}>
-          {sending ? 'Αποστολη…' : 'Αποστολη RSVP'}
+          {sending ? 'Αποστολή…' : 'Αποστολη RSVP'}
         </button>
       </form>
     </section>

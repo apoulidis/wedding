@@ -48,20 +48,20 @@ export default function Wishes() {
 
   return (
     <section className="wishes-section" id="wishes">
-      <h2 className="section-title">Βιβλιο Ευχων</h2>
-      <p className="section-sub">Αφηστε μας ενα μηνυμα — τα λογια σας θα γινουν μερος της ιστοριας μας.</p>
+      <h2 className="section-title">Βιβλίο Ευχών</h2>
+      <p className="section-sub">Αφήστε μας ένα μήνυμα — τα λόγια σας θα γίνουν μέρος της ιστορίας μας.</p>
 
       {/* Form */}
       <form className="wish-form" onSubmit={handleSubmit} noValidate>
         {error && <p className="wish-error">{error}</p>}
-        {submitted && <p className="wish-success">✨ Η ευχη σας προστεθηκε — ευχαριστουμε!</p>}
+        {submitted && <p className="wish-success">✨ Η ευχή σας προστέθηκε — ευχαριστούμε!</p>}
         <div className="form-group">
-          <label>Όνομα σας *</label>
+          <label>Ονομα σας *</label>
           <input
             type="text"
             value={name}
             onChange={e => setName(e.target.value)}
-            placeholder="π.χ. Γιαννης &amp; Μαρια"
+            placeholder="π.χ. Γιάννης &amp; Μαρία"
           />
         </div>
         <div className="form-group">
@@ -69,19 +69,19 @@ export default function Wishes() {
           <textarea
             value={message}
             onChange={e => setMessage(e.target.value)}
-            placeholder="Γραψτε τις ευχες σας…"
+            placeholder="Γράψτε τις ευχές σας…"
             rows={4}
           />
         </div>
         <button className="btn" type="submit" disabled={sending}>
-          {sending ? 'Αποστολη…' : 'Αφηστε μηνυμα 💌'}
+          {sending ? 'Αποστολή…' : 'Αφηστε μηνυμα 💌'}
         </button>
       </form>
 
       {/* Book of wishes */}
       {wishes.length > 0 && (
         <div className="wish-book">
-          <h3 className="wish-book-title">Ευχες απο τους καλεσμενους μας</h3>
+          <h3 className="wish-book-title">Ευχές από τους καλεσμένους μας</h3>
           <div className="wish-cards">
             {wishes.map(w => (
               <div key={w.id} className="wish-card">

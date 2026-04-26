@@ -1,9 +1,9 @@
 import './Home.css';
 
-const BRIDE = 'Ευμορφια';
-const GROOM = 'Αναστασιος';
+const BRIDE = 'Ευμορφία';
+const GROOM = 'Αναστάσιος';
 const TIME = '18:00';
-const CEREMONY_VENUE = 'Ι. Ναος Αγ. Βαρβαρας';
+const CEREMONY_VENUE = 'Ι. Ναός Αγ. Βαρβάρας';
 const CEREMONY_ADDRESS = 'Ανω Πατησια, Αθηνα';
 const CEREMONY_MAPS = 'https://maps.google.com/?q=Ιερος+Ναος+Αγιας+Βαρβαρας+Ανω+Πατησια+Αθηνα';
 const RECEPTION_VENUE = 'Le Soiree de Votanique';
@@ -64,7 +64,7 @@ export default function Home() {
         <div className="details-grid">
           <div className="detail-card">
             <div className="detail-icon">⛪</div>
-            <p className="detail-script">{CEREMONY_VENUE}</p>
+            <p className="detail-script detail-script--greek">{CEREMONY_VENUE}</p>
             <a
               className="detail-address detail-link"
               href={CEREMONY_MAPS}
@@ -75,7 +75,16 @@ export default function Home() {
             </a>
           </div>
           <div className="detail-card">
-            <div className="detail-icon">🕕</div>
+            <div className="detail-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="13.5" stroke="#9a8070" strokeWidth="1.5"/>
+                {/* Hour hand pointing at 6 (18:00) */}
+                <line x1="16" y1="16" x2="16" y2="24" stroke="#2c1810" strokeWidth="1.8" strokeLinecap="round"/>
+                {/* Minute hand pointing at 12 */}
+                <line x1="16" y1="16" x2="16" y2="8" stroke="#2c1810" strokeWidth="1.2" strokeLinecap="round"/>
+                <circle cx="16" cy="16" r="1.5" fill="#2c1810"/>
+              </svg>
+            </div>
             <p className="detail-script">{TIME}</p>
           </div>
           <div className="detail-card">
@@ -94,7 +103,7 @@ export default function Home() {
         <p className="details-rsvp-note">
           Παρακαλούμε απαντήστε μας έως <strong>{RSVP_DEADLINE}</strong> μέσω του παρακάτω RSVP ή στα τηλέφωνά μας
         </p>
-        <a className="btn" href="#rsvp">Απάντηση RSVP</a>
+        <a className="btn" href="#rsvp">Απαντηση RSVP</a>
       </section>
     </>
   );
