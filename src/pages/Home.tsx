@@ -33,7 +33,7 @@ export default function Home() {
           <div className="hero-calendar">
             <div className="hero-cal-month">
               <span className="cal-line" />
-              <span>ΙΟΥΝΙΟΣ</span>
+              <span>ΙΟΥΝΙΟΣ 2026</span>
               <span className="cal-line" />
             </div>
             <div className="hero-cal-grid">
@@ -64,8 +64,7 @@ export default function Home() {
         <div className="details-grid">
           <div className="detail-card">
             <div className="detail-icon">⛪</div>
-            <h3>Τελετή</h3>
-            <p className="detail-venue">{CEREMONY_VENUE}</p>
+            <p className="detail-script">{CEREMONY_VENUE}</p>
             <a
               className="detail-address detail-link"
               href={CEREMONY_MAPS}
@@ -77,14 +76,12 @@ export default function Home() {
           </div>
           <div className="detail-card">
             <div className="detail-icon">🕕</div>
-            <h3>Ώρα Τελετής</h3>
-            <p className="detail-time-big">{TIME}</p>
-            <p className="detail-address">Κυριακή, 28 Ιουνίου 2026</p>
+            <p className="detail-script">{TIME}</p>
+            <p className="detail-script detail-script--date">Κυριακή, 28 Ιουνίου 2026</p>
           </div>
           <div className="detail-card">
             <div className="detail-icon">🥂</div>
-            <h3>Δεξίωση</h3>
-            <p className="detail-venue">{RECEPTION_VENUE}</p>
+            <p className="detail-script">{RECEPTION_VENUE}</p>
             <a
               className="detail-address detail-link"
               href={RECEPTION_MAPS}

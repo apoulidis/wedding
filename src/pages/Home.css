@@ -37,7 +37,7 @@
 }
 
 .hero-names {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Segoe Script', 'Great Vibes', cursive;
   font-size: clamp(2rem, 6vw, 3.5rem);
   font-weight: 400;
   line-height: 1.15;
@@ -163,26 +163,23 @@
 
 .detail-icon {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   color: #9a8070;
 }
 
-.detail-card h3 {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.1rem;
-  color: #2c1810;
-  margin-bottom: 0.8rem;
+.detail-script {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.9rem;
   font-weight: 400;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  color: #2c1810;
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
 }
 
-.detail-venue {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: #2c1810;
-  margin-bottom: 0.3rem;
+.detail-script--date {
+  font-size: 1.3rem;
+  color: #6b4c3e;
+  margin-top: 0.2rem;
 }
 
 .detail-address {
@@ -192,25 +189,11 @@
   letter-spacing: 0.04em;
 }
 
-.detail-time {
-  font-size: 0.95rem;
-  color: #7a5c4e;
-  font-style: italic;
-}
-
 .details-rsvp-note {
   color: #6b4c3e;
   font-size: 1rem;
   margin-bottom: 1.5rem;
   letter-spacing: 0.04em;
-}
-
-.detail-time-big {
-  font-family: 'Great Vibes', cursive;
-  font-size: 3rem;
-  color: #2c1810;
-  line-height: 1.1;
-  margin-bottom: 0.5rem;
 }
 
 .detail-link {
