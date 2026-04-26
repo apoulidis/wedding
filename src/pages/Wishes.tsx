@@ -56,7 +56,7 @@ export default function Wishes() {
         {error && <p className="wish-error">{error}</p>}
         {submitted && <p className="wish-success">✨ Η ευχή σας προστέθηκε — ευχαριστούμε!</p>}
         <div className="form-group">
-          <label>Ονομα σας *</label>
+          <label>Το ονομα σας *</label>
           <input
             type="text"
             value={name}

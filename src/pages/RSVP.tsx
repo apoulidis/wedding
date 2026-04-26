@@ -70,10 +70,10 @@ export default function RSVP() {
       <section className="rsvp-section" id="rsvp">
         <div className="rsvp-card rsvp-confirm">
           <div className="confirm-icon">✉️</div>
-          <h2>Ευχαριστουμε, {form.name.split(' ')[0]}!</h2>
+          <h2>Ευχαριστούμε, {form.name.split(' ')[0]}!</h2>
           {form.attending
-            ? <p>Χαιρομαστε που θα ειστε μαζι μας! Ανυπομονουμε να γιορτασουμε μαζι!</p>
-            : <p>Λυπουμαστε που δεν μπορειτε να ερθετε, αλλα σας ευχαριστουμε που μας ενημερωσατε.</p>}
+            ? <p>Χαιρόμαστε που θα είστε μαζί μας! Ανυπομονούμε να γιορτάσουμε μαζί!</p>
+            : <p>Λυπούμαστε που δεν μπορείτε να έρθετε, αλλά σας ευχαριστούμε που μας ενημερώσατε.</p>}
           <button className="btn" onClick={() => { setForm(initial); setSubmitted(false); }}>
             Νεα απαντηση
           </button>
@@ -96,7 +96,7 @@ export default function RSVP() {
             type="text"
             value={form.name}
             onChange={e => set('name', e.target.value)}
-            placeholder="Το ονομά σας"
+            placeholder="Το όνομά σας"
             required
           />
         </div>
